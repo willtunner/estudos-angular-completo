@@ -1,0 +1,9 @@
+<h5>ngFor</h5>
+
+<p>como é um array de strings ele coloca somente cada nome, e passamos o index dessa forma tb</p>
+<p>indice do array começa como zero, para ajustar podemos fazer uma expressão para somar um</p>
+<ul>
+    <li *ngFor="let curso of cursos, let i = index"> {{ i + 1 }} - {{ curso }} </li>
+</ul>
+
+=========================================================================================================================================

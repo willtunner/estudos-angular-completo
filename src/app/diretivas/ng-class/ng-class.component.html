@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>
+        <p>stars - com ngClass</p>
+        <i class="bi"
+        role="button"
+        [ngClass]="{'bi bi-star': !meuFavorito, 'bi bi-star-fill': meuFavorito}"
+        (click)="onClick()"
+        ></i>
+    
+        <p>stars - com class binding</p>
+        <i class="bi"
+        role="button"
+        [class.bi-star]="!meuFavorito"
+        [class.bi-star-fill]="meuFavorito"
+        (click)="onClick()"
+        ></i>
+    </h1>
+</div>
+=========================================================================================================================================
+
+

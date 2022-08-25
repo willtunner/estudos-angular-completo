@@ -1,0 +1,37 @@
+<div class="container">
+    <h5>ngIf</h5>
+
+<div *ngIf="cursos.length > 0">
+    Lisa de cursos aqui
+</div>
+
+<div *ngIf="cursos.length == 0">
+    Não existe cursos a serem listados
+</div>
+
+<div *ngIf="mostrarCursos">
+    mostrar cursos booleam
+</div>
+
+<div *ngIf="!mostrarCursos">
+    não mostrar cursos booleam
+</div>
+
+<button class="btn btn-primary mt-5 mb-5"  (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+
+<h5>Hidden como alternativa, consome menos, melhora performance</h5>
+<div [hidden]="!mostrarCursos">
+    mostrar cursos hidden
+</div>
+
+<div [hidden]="mostrarCursos">
+    não mostrar cursos hidden
+</div>
+
+<b>
+    <span style="color: red">hidden</span> <p>recomendado para arvores de elementos pequenos, como esconder menu etc..</p>
+    <span style="color: red">ngIf</span> <p>recomendado para arvores de elementos grandes, que retornam do server</p>
+</b>
+
+</div>
+<p>=========================================================================================================================================</p>

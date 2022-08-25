@@ -1,0 +1,11 @@
+<div class="container">
+    <p>Descrição: {{ tarefa.desc }}</p>
+
+    usando if ternário 'se tiver nulo mostre se não mostre em branco'
+    <p>Responsável: {{ tarefa.responsavel.usuario != null ? tarefa.responsavel.usuario : ''  }}</p>
+    usando operador elvis ?
+    <p>Responsável: {{ tarefa.responsavel?.usuario }}</p>
+</div>
+
+
+=========================================================================================================================================
