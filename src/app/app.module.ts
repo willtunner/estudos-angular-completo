@@ -12,6 +12,9 @@ import { FormsModule } from '@angular/forms';
 import { OperadorElvisComponent } from './diretivas/operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './diretivas/ng-content/ng-content.component';
 import { ElementRefRendererComponent } from './diretivas/element-ref-renderer/element-ref-renderer.component';
+import { ChangeColorDirective } from './shared/change-color.directive';
+import { HostlistenerHostbindComponent } from './diretivas/hostlistener-hostbind/hostlistener-hostbind.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ElementRefRendererComponent } from './diretivas/element-ref-renderer/el
     NgStyleComponent,
     OperadorElvisComponent,
     NgContentComponent,
-    ElementRefRendererComponent
+    ElementRefRendererComponent,
+    ChangeColorDirective,
+    HostlistenerHostbindComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
